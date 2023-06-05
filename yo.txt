@@ -35,7 +35,7 @@ Hacked By MR_DARK
 <a style="color:#00FF00">
 █▀█&emsp;█░█░█&emsp;█▄░█&emsp;█▀▀&emsp;█▀▄&emsp;░
 █▀▀&emsp;▀▄▀▄▀&emsp;█░▀█&emsp;██▄&emsp;█▄▀&emsp;▄
-</a><br><a style="color:white">I did not delete or encrypt your files<br>Instead, I have backed up the index file as 'index.backup.txt'.</a><a style="color:red">
+</a><br><a style="color:white">You Lose! You Lose!! You Lose!!!<br>- Indonesian Hacktivist -</a><a style="color:red">
  __       __            _______                       __       
 |  \     /  \          |       \                     |  \      
 | $$\   /  $$  ______  | $$$$$$$\  ______    ______  | $$   __ 
