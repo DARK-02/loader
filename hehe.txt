@@ -1,0 +1,149 @@
+<html><head><title>H4ck3d By MR_DARK</title>
+<meta property="og:title" content="H4ck3d By MR_DARK">
+<meta name="description content=" just="" a="" memory="" after="" im="" gone="">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta property="og:description" content="Indonesian H4cktivist">
+<meta property="og:image" content="https://fairworkcenter.org/wp-content/uploads/2018/04/H4ck3d-skull.jpg">
+<script> 
+     alert("H4ck3d By MR_DARK!"); 
+     alert("#STOP PUNGLI!"); 
+</script> 
+
+<link rel="SHORTCUT ICON" href="https://images.pling.com/img/00/00/16/01/26/1143711/147349-1.png">
+    <style type="text/css" media="all">
+      @import url("https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap");
+      body {
+        background: url("https://media.tenor.com/ofYCY_OJQ1kAAAAS/hacker-hack.gif") no-repeat center center fixed; 
+        background-size: cover;
+        color: white;
+        font-family: serif;
+        font-family: "Kelly Slab";
+      }
+      h1 {
+        font-weight: bold;
+        letter-spacing: 2px;
+      }
+      p{
+        font-size: 18px; 
+      }
+      img{
+        width: 500px;
+      }
+      audio {
+        opacity:0.85;
+        border-radius:0px;
+        border:0px #fff solid;
+      }
+      center {
+        width:100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 50%;
+        margin: auto;
+        position: absolute;
+      }
+    </style>
+        <style>
+      @keyframes shake {
+        0% {
+          transform: translate(0, 0);
+        }
+        10% {
+          transform: translate(-5px, 5px);
+        }
+        20% {
+          transform: translate(5px, -5px);
+        }
+        30% {
+          transform: translate(-5px, -5px);
+        }
+        40% {
+          transform: translate(5px, 5px);
+        }
+        50% {
+          transform: translate(0, 0);
+        }
+      }
+      pre {
+        animation: shake 0.18s ease-in-out infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+</head>
+<body bgcolor="black" onclick="play()">
+	
+<table width="100%" height="100%"><tbody><tr><td align="center"><style>
+.ascii {font-family: 'Courier New';color: white;font-size:12pt;font-weight: bold;}
+</style>
+<pre><div class="ascii"><p style="color:red">
+H4ck3d By MR_DARK
+<a style="color:#00FF00">
+█▀█&emsp;█░█░█&emsp;█▄░█&emsp;█▀▀&emsp;█▀▄&emsp;░
+█▀▀&emsp;▀▄▀▄▀&emsp;█░▀█&emsp;██▄&emsp;█▄▀&emsp;▄
+</a><br><a style="color:white">#StopPungli!<br>- i have backed up your files, i did not damage your system -</a><a style="color:red">
+ __       __            _______                       __       
+|  \     /  \          |       \                     |  \      
+| $$\   /  $$  ______  | $$$$$$$\  ______    ______  | $$   __ 
+| $$$\ /  $$$ /      \ | $$  | $$ |      \  /      \ | $$  /  \
+| $$$$\  $$$$|  $$$$$$\| $$  | $$  \$$$$$$\|  $$$$$$\| $$_/  $$
+| $$\$$ $$ $$| $$   \$$| $$  | $$ /      $$| $$   \$$| $$   $$ 
+| $$ \$$$| $$| $$      | $$__/ $$|  $$$$$$$| $$      | $$$$$$\ 
+| $$  \$ | $$| $$      | $$    $$ \$$    $$| $$      | $$  \$$\
+ \$$      \$$ \$$       \$$$$$$$   \$$$$$$$ \$$       \$$   \$$
+                                                               
+ https://www.tiktok.com/@lyzexz
+</a></p></div></pre><a style="color:red">
+
+
+<div class="content">
+
+
+
+<center>
+
+
+
+<audio id="sec" autoplay="" loop=""> <source src="https://j.top4top.io/m_2711o1j1h1.mp3"></audio>
+
+
+</center>
+
+
+
+</div>
+
+
+
+<script>
+
+
+
+    var x = document.getElementById("sec");
+
+
+
+    function play() {
+
+
+
+      x.play(); 	
+
+
+
+    } 	 	
+
+
+    </script>
+
+
+
+
+
+
+
+</a></td></tr></tbody></table>
+</body></html>
